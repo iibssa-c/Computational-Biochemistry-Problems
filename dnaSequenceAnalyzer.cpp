@@ -42,9 +42,7 @@ void countNucleotides(const std::string &dnaSeq) {
 
             default: 
             break; 
-            
         }
-
     }
     std::cout << "A: " << countA << "\nT: " << countT << "\nC: " << countC << "\nG: " << countG << std::endl;  
 }
