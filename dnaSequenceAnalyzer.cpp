@@ -1,21 +1,5 @@
 #include <iostream>
 #include <string>
-#include <fstream>
-
-// Read DNA seqeuence from file
-std::string readDNASequence(const std::string &filename) { 
-    std::ifstream file(filename);
-    std::string dnaSeq; 
-
-    if(file.is_open()) {
-        std::getline(file, dnaSeq, '\0');
-        file.close(); 
-    } else {
-        std::cerr << "File cannot be opened" << filename << std::endl; 
-    }
-
-    return dnaSeq;
-}
 
 // Count nucleotides A, T, C, G
 void countNucleotides(const std::string &dnaSeq) { 
